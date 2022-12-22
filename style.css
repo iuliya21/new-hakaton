@@ -1,0 +1,49 @@
+.wrapper {
+    position: relative;
+    display: grid;
+    max-width: 270px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cover {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cover-on {
+    display: block;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.box-five {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.box-six {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.box-seven {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.color-active {
+    background: pink;
+}
